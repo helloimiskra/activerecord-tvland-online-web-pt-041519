@@ -1,6 +1,7 @@
 class Show < ActiveRecord::Base
-  has_many :character
+  has_many :characters
 
-  belongs_to :genre
-
+  def characters
+    self.characters
+  end
 end
